@@ -29,7 +29,7 @@ def backtest_ml(
             tp.Callable[[tp.Any, DataSet, tp.Any], tp.Tuple[xr.DataArray, tp.Any]],
         ],
 
-        train_period: int = 4*365,
+        train_period: int = 10*365,
         retrain_interval: int = 365,
         predict_each_day: bool = False,
         retrain_interval_after_submit: tp.Union[int, None] = None,
